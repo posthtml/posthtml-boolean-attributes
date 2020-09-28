@@ -8,18 +8,18 @@
   },
   "bugs": "https://github.com/posthtml/posthtml-boolean-attributes/issues",
   "dependencies": {
-    "posthtml": "^0.11.4"
+    "posthtml": "^0.13.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-angular": "^8.0.0",
-    "ava": "^2.1.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
+    "ava": "^3.13.0",
     "conventional-changelog": "^3.1.8",
     "conventional-changelog-lint": "^2.1.1",
-    "husky": "^3.0.0",
-    "mversion": "^1.10.1",
+    "husky": "^4.3.0",
+    "mversion": "^2.0.1",
     "snazzy": "^8.0.0",
-    "standard": "^12.0.1"
+    "standard": "^14.3.4"
   },
   "engines": {
     "node": ">=10"

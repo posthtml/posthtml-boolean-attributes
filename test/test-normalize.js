@@ -1,5 +1,5 @@
-import test from 'ava'
-import normalize from '../lib/normalize'
+const test = require('ava')
+const normalize = require('../lib/normalize')
 
 test('Should return empty array', t => {
   t.deepEqual(normalize(), [])
