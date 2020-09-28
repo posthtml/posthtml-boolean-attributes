@@ -1,4 +1,4 @@
-# PostHTML Plugin Boilerplate <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
+# PostHTML Plugin Boolean Attributes <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
 
 [![NPM][npm]][npm-url]
 [![Deps][deps]][deps-url]
@@ -7,86 +7,46 @@
 [![Standard Code Style][style]][style-url]
 [![Chat][chat]][chat-badge]
 
-Clone this repo and explain what your plugin do and why thousands of people need it ;)
+Doesn't set `=""` if set to `true`, If an array is specified, it will not set the value `['customeBooleanAttr']` for the specified attributes and when specifying `['!customeBooleanAttr']` in the array will exclude attributes.
 
 Before:
 ``` html
-<html>
-  <body>
-    <p class="wow">OMG</p>
-  </body>
-</html>
+  <script async></script>
 ```
 
 After:
 ``` html
-<svg xmlns="http://www.w3.org/2000/svg">
-  <text class="wow" id="wow_id" fill="#4A83B4" fill-rule="evenodd" font-family="Verdana">
-    OMG
-  </text>
-</svg>
+  <script async=""></script>
 ```
 
 ## Install
 
-Describe how big guys can install your plugin.
-
-> npm i posthtml posthtml-plugin
+> npm i posthtml posthtml-boolean-attributes
 
 ## Usage
-
-Describe how people can use this plugin. Include info about build systems if it's
-necessary.
 
 ``` js
 const fs = require('fs');
 const posthtml = require('posthtml');
-const posthtmlPlugin = require('posthtml-plugin');
+const booleanAttributes = require('posthtml-boolean-attributes');
 
 posthtml()
-    .use(posthtmlPlugin({ /* options */ }))
+    .use(booleanAttributes({ /* options */ }))
     .process(html/*, options */)
     .then(result => fs.writeFileSync('./after.html', result.html));
 ```
 
 ## Options
 
-Describe all features of your plugin with examples of usage.
+#### `enable`
 
-### Feature
-Before:
-``` html
-<html>
-  <body>
-    <p>OMG</p>
-  </body>
-</html>
-```
-Add option:
-``` js
-const fs = require('fs');
-const posthtml = require('posthtml');
-const posthtmlPlugin = require('posthtml-plugin');
-
-posthtml()
-    .use(posthtmlPlugin({ feature: 'wow' }))
-    .process(html/*, options */)
-    .then(result => fs.writeFileSync('./after.html', result.html));
-```
-After:
-``` html
-<html>
-  <body>
-    <p class="wow">OMG</p>
-  </body>
-</html>
-```
+Type: `Boolean|Array<String>`  
+Default: `true`  
+Description: *Doesn't set `=""` if set to `true`, if an array is specified, it will not set the value `['customeBooleanAttr']` for the specified attributes and when specifying ['!customeBooleanAttr'] in the array will exclude attributes.*
 
 ### Contributing
 
 See [PostHTML Guidelines](https://github.com/posthtml/posthtml/tree/master/docs) and [contribution guide](CONTRIBUTING.md).
-
-### License [MIT](LICENSE)
 
 [npm]: https://img.shields.io/npm/v/posthtml.svg
 [npm-url]: https://npmjs.com/package/posthtml

@@ -1,12 +1,12 @@
 {
-  "name": "posthtml-plugin",
-  "description": "PostHTML plugin description",
-  "version": "1.0.0",
+  "name": "posthtml-boolean-attributes",
+  "description": "Helps to perform transformations with boolean attributes ",
+  "version": "0.0.0",
   "author": "PostHTML",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/posthtml/posthtml-plugin-boilerplate/issues",
+  "bugs": "https://github.com/posthtml/posthtml-boolean-attributes/issues",
   "dependencies": {
     "posthtml": "^0.11.4"
   },
@@ -22,9 +22,9 @@
     "standard": "^12.0.1"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
-  "homepage": "https://github.com/posthtml/posthtml-plugin-boilerplate",
+  "homepage": "https://github.com/posthtml/posthtml-boolean-attributes",
   "keywords": [
     "html",
     "posthtml",
@@ -32,10 +32,10 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "repository": "posthtml/posthtml-plugin-boilerplate",
+  "repository": "posthtml/posthtml-boolean-attributes",
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md",
-    "lint": "standard | snazzy",
+    "lint": "standard --fix | snazzy",
     "release-major": "mversion major",
     "release-minor": "mversion minor",
     "release-patch": "mversion patch",
