@@ -39,7 +39,7 @@ posthtml()
 
 #### `boolAttrs`
 
-Type: `Boolean|Array<String>`  
+Type: `Boolean|Array<String|RegExp>`  
 Default: `true`  
 Description: *Doesn't set `=""` if set to `true`, if an array is specified, it will not set the value `['customeBooleanAttr']` for the specified attributes and when specifying ['!customeBooleanAttr'] in the array will exclude attributes.*
 
