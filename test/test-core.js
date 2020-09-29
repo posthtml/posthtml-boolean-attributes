@@ -11,13 +11,19 @@ test('basic', (t) => {
   return compare(t, 'basic')
 })
 
-function compare (t, name) {
+test('regexp', (t) => {
+  return compare(t, 'regexp', {
+    boolAttrs: [/^\${/]
+  })
+})
+
+function compare (t, name, pluginOptions = {}) {
   const html = readFileSync(path.join(fixtures, `${name}.html`), 'utf8')
   const expected = readFileSync(path.join(fixtures, `${name}.expected.html`), 'utf8')
 
-  return posthtml([plugin()])
+  return posthtml([plugin(pluginOptions)])
     .process(html)
     .then((res) => {
-      t.truthy(res.html === expected)
+      t.deepEqual(res.html, expected)
     })
 }
