@@ -37,7 +37,7 @@ posthtml()
 
 ## Options
 
-#### `enable`
+#### `boolAttrs`
 
 Type: `Boolean|Array<String>`  
 Default: `true`  
