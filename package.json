@@ -1,7 +1,7 @@
 {
   "name": "posthtml-boolean-attributes",
   "description": "Helps to perform transformations with boolean attributes ",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "PostHTML",
   "ava": {
     "verbose": "true"
