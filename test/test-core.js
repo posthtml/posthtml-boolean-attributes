@@ -17,6 +17,12 @@ test('regexp', (t) => {
   })
 })
 
+test('regexp with value', (t) => {
+  return compare(t, 'regexp-with-value', {
+    boolAttrs: [/^ng-/]
+  })
+})
+
 function compare (t, name, pluginOptions = {}) {
   const html = readFileSync(path.join(fixtures, `${name}.html`), 'utf8')
   const expected = readFileSync(path.join(fixtures, `${name}.expected.html`), 'utf8')
