@@ -1,5 +1,16 @@
+## <small>0.3.1 (2020-10-01)</small>
+
+* fix: cutome attribute with value ([274be47](https://github.com/posthtml/posthtml-boolean-attributes/commit/274be47))
+* test: cutome attribute with value ([98e3de7](https://github.com/posthtml/posthtml-boolean-attributes/commit/98e3de7))
+* test: eol ([060aa3c](https://github.com/posthtml/posthtml-boolean-attributes/commit/060aa3c))
+* ci: fix node version ([17c3834](https://github.com/posthtml/posthtml-boolean-attributes/commit/17c3834))
+* docs: add regexp description ([120a1bd](https://github.com/posthtml/posthtml-boolean-attributes/commit/120a1bd))
+
+
+
 ## 0.3.0 (2020-09-29)
 
+* 0.3.0 ([84fca1b](https://github.com/posthtml/posthtml-boolean-attributes/commit/84fca1b))
 * docs: fix pkg link ([4414f79](https://github.com/posthtml/posthtml-boolean-attributes/commit/4414f79))
 * feat: attributes by pattern, close #4 ([72b0697](https://github.com/posthtml/posthtml-boolean-attributes/commit/72b0697)), closes [#4](https://github.com/posthtml/posthtml-boolean-attributes/issues/4)
 * test: attributes by pattern, #4 ([8b2f900](https://github.com/posthtml/posthtml-boolean-attributes/commit/8b2f900)), closes [#4](https://github.com/posthtml/posthtml-boolean-attributes/issues/4)
